@@ -1,0 +1,53 @@
+ 
+Commands For Displaying System Information=======================================================================
+  165  lscpu
+  166  cat /proc/cpuinfo
+  167  lsb_release -a
+  
+
+Commands for installing the package (Copy/Paste from the Repository as instructed) ==============================
+  168  sudo apt-get update
+  169  sudo apt-get -y upgrade
+  170  pwd
+  171  sudo apt install -y bluez-tools bluez-hcidump libbluetooth-dev \\n                    git gcc python3-pip python3-setuptools \\n                    python3-pydbus
+  172  git clone https://github.com/pybluez/pybluez.git
+  173  cd pybluez\nsudo python3 setup.py install
+  174  cd ~/\ngit clone --depth=1 https://github.com/bluez/bluez.git\ngcc -o bdaddr ~/bluez/tools/bdaddr.c ~/bluez/src/oui.c -I ~/bluez -lbluetooth\nsudo cp bdaddr /usr/local/bin/
+  175  ls
+  176  git clone --depth=1 https://github.com/bluez/bluez.git
+  177  gcc -o bdaddr ~/bluez/tools/bdaddr.c ~/bluez/src/oui.c -I ~/bluez -lbluetooth
+  178  sudo cp bdaddr /usr/local/bin/
+  179  git clone https://github.com/pentestfunctions/BlueDucky.git
+  180  cd BlueDucky
+  181  sudo hciconfig hci0 up
+  182  python3 BlueDucky.py
+
+Latest version of the script not working. to Install an older version.... =======================================
+  183  ls
+  184  cd ..
+  185  ls
+  186  mv BlueDucky BlueDucky2.1
+  187  ls
+  188  wget https://codeload.github.com/pentestfunctions/BlueDucky/zip/49f470aa979d56b2ad5911b54ed38c39d28aa17c
+  189  ls
+  190  mv 49f470aa979d56b2ad5911b54ed38c39d28aa17c 49f470aa979d56b2ad5911b54ed38c39d28aa17c.zip
+  191  ls
+  192  unzip 49f470aa979d56b2ad5911b54ed38c39d28aa17c.zip
+  193  ls
+  194  rm -rf 49f470aa979d56b2ad5911b54ed38c39d28aa17c.zip
+  195  ls
+  196  mv BlueDucky-49f470aa979d56b2ad5911b54ed38c39d28aa17c BlueDucky
+  197  ls
+  198  cd BlueDucky
+  199  ls
+  200  python3 BlueDucky.py
+  201  ls
+
+To modify provided ducky scripts =================================================================================
+  202  cd payloads
+  203  ls
+  206  nano payload_example_1.txt
+
+
+  208  cd ..
+  213  python3 BlueDucky.py
